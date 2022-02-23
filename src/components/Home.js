@@ -32,7 +32,7 @@ function Home() {
       <p>Name: {pokemon.name}</p>
       <p>Height: {pokemon.height}</p>
       <p>Weight: {pokemon.weight}</p>
-      {/* <p>Type: {pokemon.types[0].type.name}</p> */}
+      {pokemon.types ? <p>Type: {pokemon?.types[0]?.type?.name}</p> : null}
       <button onClick={handleClick}>Get random Pokemon</button>
     </div>
   ) : (
